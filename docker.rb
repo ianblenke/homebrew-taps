@@ -1,5 +1,5 @@
 class Docker < Formula
-  desc "Pack, ship and run any application as a lightweight container"
+  #desc "Pack, ship and run any application as a lightweight container"
   homepage "https://www.docker.com/"
   # Boot2docker and docker are generally updated at the same time.
   # Please update the version of boot2docker too
@@ -8,7 +8,7 @@ class Docker < Formula
 
   bottle do
     cellar :any
-    sha256 "8139ce8f2f2bd6e3217e33a07d6bb5f8df2666a37c720ca9116d22fefb937f1b" => :yosemite
+    #sha256 "8139ce8f2f2bd6e3217e33a07d6bb5f8df2666a37c720ca9116d22fefb937f1b" => :yosemite
     #sha256 "af05ca45e1d041333351576cdda888fab81dd233690061cba709ae00cadf1c32" => :mavericks
     #sha256 "94e5d68a79447b14d7ca3d64ce05aa0a471c57a89ccee295e3281049ddf5628a" => :mountain_lion
   end
