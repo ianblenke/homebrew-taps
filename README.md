@@ -1,4 +1,4 @@
-# ianblenke/taps
+# ianblenke/homebew-taps
 
 My customized Homebrew taps. Mostly for the latest versions of docker things, at the moment.
 
