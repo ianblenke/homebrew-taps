@@ -34,7 +34,7 @@ More information on `brew tap` can be found here:
 Also, check the docker repos for more information on those packages:
 
 - https://github.com/docker/docker
-- https://github.com/docker/docker/compose
-- https://github.com/docker/docker/machine
+- https://github.com/docker/compose
+- https://github.com/docker/machine
 
 Enjoy!
