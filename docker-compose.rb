@@ -1,7 +1,7 @@
-class Fig < Formula
+class DockerCompose < Formula
   homepage "http://docs.docker.com/compose/"
-  url "https://github.com/docker/compose/archive/1.1.0.tar.gz"
-  sha1 "175066934c19f455606b16f1b4e4b9f26fc3f599"
+  url "https://github.com/docker/compose/archive/1.3.0.tar.gz"
+  sha1 "f559e840a513a4a4c7f8aea7e3b8df193258c69a"
 
   depends_on :python if MacOS.version <= :snow_leopard
   depends_on "libyaml"
@@ -9,11 +9,12 @@ class Fig < Formula
   # It's possible that the user wants to manually install Docker and Boot2Docker,
   # for example, they want to compile Docker manually
   depends_on "docker" => :recommended
-  depends_on "boot2docker" => :recommended
+  depends_on "boot2docker" => :optional
+  depends_on "docker-machine" => :optional
 
   resource "docker-py" do
-    url "https://pypi.python.org/packages/source/d/docker-py/docker-py-0.7.2.tar.gz"
-    sha1 "c526e95ea974b2a40392dbe00d0ecbfffa6c5d4b"
+    url "https://pypi.python.org/packages/source/d/docker-py/docker-py-1.2.3.tar.gz"
+    sha1 "47617271af939cec9d1424c8cd7c66d401c456df"
   end
 
   resource "pyyaml" do
@@ -27,8 +28,8 @@ class Fig < Formula
   end
 
   resource "dockerpty" do
-    url "https://pypi.python.org/packages/source/d/dockerpty/dockerpty-0.3.2.tar.gz"
-    sha1 "4b323b7c2fce84452dc5950ff1b32d97d9a412aa"
+    url "https://pypi.python.org/packages/source/d/dockerpty/dockerpty-0.3.4.tar.gz"
+    sha1 "50029f80aae4f21e0d7f1471e1fcb701e41f1fdb"
   end
 
   resource "texttable" do
@@ -42,8 +43,8 @@ class Fig < Formula
   end
 
   resource "requests" do
-    url "https://pypi.python.org/packages/source/r/requests/requests-2.4.3.tar.gz"
-    sha1 "411f1bfa44556f7dd0f34cd822047c31baa7d741"
+    url "https://pypi.python.org/packages/source/r/requests/requests-2.6.1.tar.gz"
+    sha1 "bf1283762677b2273d49e1ee7d649535a1205045"
   end
 
   resource "websocket-client" do
