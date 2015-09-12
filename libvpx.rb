@@ -12,7 +12,7 @@ class Libvpx < Formula
 #    sha256 "6aed92389466e1a0cf62b8320262d33c2e5e0c2802b40e2cbd267f270621e77f" => :mountain_lion
 #  end
 
-  patch :p2 do
+  patch :p1 do
     url 'https://hg.mozilla.org/mozilla-central/raw-file/5515fa5ba20d/media/libvpx/apple-clang.patch'
     sha256 'c9510bf1e03fed9b7ad740d3970f18c168b759f32e9ec61882a8896c59aaf654'
   end
