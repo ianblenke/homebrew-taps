@@ -13,7 +13,7 @@ class Harfbuzz < Formula
     depends_on "libtool" => :build
   end
 
-  patch :p0 do
+  patch :p1 do
     url 'https://gist.githubusercontent.com/ianblenke/e52684ee1fd865667245/raw/482f35c9dd2485aa529fed5b6d22f6310e220a04/kCTLanguageAttributeName.patch'
     sha256 '1f118ccc17848e43f55dfbd8332510c5f9767d8a0171ed43e4703980cac7958b'
   end
